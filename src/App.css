@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+  background-color: #efeff1;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 10px;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin-top: -300px;
+  border-radius: 80px;
+}
+
+/*
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+}*/
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(183, 1, 1);
+  margin-top: -20%;
+}
+
+.App-link {
+  color: #351683;
+  margin-bottom: -500px;
+}
+
+
+/*@keyframes skil_logo3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
+.name{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about-me {
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.about-me h2 {
+  margin-top: 0;
+}
+
+.about-me p {
+  margin-bottom: 10px;
+}
+.skils{
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #ffffff46;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.skil_logo1 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #635959;
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  animation: rotate 10s linear infinite;
+}
+.skil_logo2 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #635959;
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  animation: rotate 10s linear infinite;
+}
+.skil_logo3 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  vertical-align: middle;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #635959;
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  animation: rotate 10s linear infinite;
+}
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    
+    display: inline-block;
+
+}}
+.skil_logo4 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #635959;
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  animation: rotate 10s linear infinite;
+}
+.skil_logo5 {
+  width: 80px;
+  height: 60px;
+  margin: 5px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #635959;
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  animation: rotate 10s linear infinite;
+}
+span {
+  position: relative;
+}
+
+span:hover::after {
+  content: "Bsc(Hons) in computer Science";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+.education{
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #979994;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.e{
+  font-style: italic;
+  color: #ddd;
+}
+.uni{
+  background-color: #5e5963;
+}
+.school{
+  background-color: #635959;
+}
