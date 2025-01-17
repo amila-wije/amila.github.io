@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/amila.github.io/static/css/main.97af4809.css",
-    "main.js": "/amila.github.io/static/js/main.9cb5f486.js",
+    "main.css": "/amila.github.io/static/css/main.4c0419ee.css",
+    "main.js": "/amila.github.io/static/js/main.e4d39e33.js",
     "static/js/488.103417aa.chunk.js": "/amila.github.io/static/js/488.103417aa.chunk.js",
     "static/media/photo.jpg": "/amila.github.io/static/media/photo.afb034849f879b949d34.jpg",
     "index.html": "/amila.github.io/index.html",
-    "main.97af4809.css.map": "/amila.github.io/static/css/main.97af4809.css.map",
-    "main.9cb5f486.js.map": "/amila.github.io/static/js/main.9cb5f486.js.map",
+    "main.4c0419ee.css.map": "/amila.github.io/static/css/main.4c0419ee.css.map",
+    "main.e4d39e33.js.map": "/amila.github.io/static/js/main.e4d39e33.js.map",
     "488.103417aa.chunk.js.map": "/amila.github.io/static/js/488.103417aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97af4809.css",
-    "static/js/main.9cb5f486.js"
+    "static/css/main.4c0419ee.css",
+    "static/js/main.e4d39e33.js"
   ]
 }
