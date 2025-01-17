@@ -23,9 +23,7 @@ function App() {
           When I'm not coding, you can find me exploring new places, trying out new foods, or reading a good book. </p>
           <p>I'm a firm believer in the importance of work-life balance and strive to maintain a healthy balance between my professional and personal life.
         </p>
-        <p>
-          If you're interested in learning more about my work or would like to get in touch, feel free to reach out to me on social media or through my website.
-        </p>
+        
       </section>
 
 
@@ -34,9 +32,9 @@ function App() {
         <h2 >Education</h2>
         <div class="uni">
         <a href="https://seu.ac.lk/">
-        <img src="http://www.seu.ac.lk/images/seu_banner.png" alt="Description of the image" height={70} width={300}/>
+        <img src="http://www.seu.ac.lk/images/seu_banner.png"  className="campus" alt="campus" height={70} width={300}/>
         </a>
-        <p>Bsc(Hons) In computer Science</p>
+        <p>Bsc(Hons) In Computer Science</p>
         </div>
         
 
@@ -90,3 +88,9 @@ function App() {
 }
 
 export default App;
+
+/*git add .
+git commit -m "Your commit message"
+git push origin main  # or git push origin master if you're using the master branch
+npm run build
+npm run deploy*/

@@ -5,11 +5,21 @@ body, h1, h2, h3, p, ul, li {
   box-sizing: border-box;
 }
 
+/* Keyframes for Rotation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* App Styles */
 .App {
   text-align: center;
   background-color: #efeff1;
-  margin: 20px auto; /* Adjust margins for smaller screens */
+  margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
   max-width: 1200px;
@@ -17,18 +27,8 @@ body, h1, h2, h3, p, ul, li {
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
   margin-top: -300px;
   border-radius: 80px;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .App-header {
@@ -47,32 +47,22 @@ body, h1, h2, h3, p, ul, li {
   margin-bottom: -500px;
 }
 
-.name {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.about-me,
-.skils,
-.education {
+.about-me, .skils, .education {
   padding: 20px;
-  margin: 10px auto; /* Center content for smaller screens */
+  margin: 10px auto;
   background-color: #f7f7f7;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
 }
 
-.about-me h2,
-.about-me p,
-.e {
+.about-me h2, .skils h2, .education h2 {
   margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.skil_logo1,
-.skil_logo2,
-.skil_logo3,
-.skil_logo4,
-.skil_logo5 {
+.skil_logo1, .skil_logo2, .skil_logo3, .skil_logo4 {
   width: 50px;
   height: 50px;
   margin: 10px;
@@ -86,15 +76,6 @@ body, h1, h2, h3, p, ul, li {
 .skil_logo5 {
   width: 80px;
   height: 60px;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 span {
@@ -114,10 +95,11 @@ span:hover::after {
 
 .education {
   background-color: #979994;
+  color: #efeff1;
 }
 
 .uni {
-  background-color: #5e5963;
+  background-color: #635959;
 }
 
 .school {
@@ -135,7 +117,7 @@ span:hover::after {
 
   .App-header {
     font-size: calc(8px + 2vmin);
-    margin-top: -10%;
+    margin-top: -100%;
   }
 
   .App-logo {
@@ -143,18 +125,13 @@ span:hover::after {
     margin-top: -200px;
   }
 
-  .about-me,
-  .skils,
-  .education {
+  .about-me, .skils, .education {
     padding: 15px;
     margin: 10px auto;
+    
   }
 
-  .skil_logo1,
-  .skil_logo2,
-  .skil_logo3,
-  .skil_logo4,
-  .skil_logo5 {
+  .skil_logo1, .skil_logo2, .skil_logo3, .skil_logo4, .skil_logo5 {
     width: 40px;
     height: 40px;
   }
@@ -163,135 +140,13 @@ span:hover::after {
 /* Small Screens (Mobile Devices, 480px and below) */
 @media (max-width: 480px) {
   .App {
-    margin: 5px auto;/* General Styles */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Keyframes for Rotation */
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* App Styles */
-.App {
-  @apply text-center bg-gray-200 my-5 mx-auto p-5 rounded-lg max-w-5xl;
-}
-
-.App-logo {
-  @apply h-[40vmin] md:h-[30vmin] lg:h-[20vmin] -mt-72 rounded-full;
-}
-
-.App-header {
-  @apply min-h-screen flex flex-col items-center justify-center text-red-800 text-lg md:text-xl -mt-20;
-}
-
-.App-link {
-  @apply text-purple-800 mb-[-500px];
-}
-
-.about-me, .skils, .education {
-  @apply p-5 my-4 bg-gray-50 border border-gray-300 rounded-lg shadow-lg;
-}
-
-.about-me h2, .skils h2, .education h2 {
-  @apply text-xl font-bold mb-2;
-}
-
-.skil_logo1, .skil_logo2, .skil_logo3, .skil_logo4 {
-  @apply w-12 h-12 border border-gray-600 rounded-lg shadow-lg;
-}
-
-.skil_logo5 {
-  @apply w-20 h-16 border border-gray-600 rounded-lg shadow-lg;
-}
-
-.skil-logo-animated {
-  @apply animate-spin;
-}
-
-span {
-  @apply relative;
-}
-
-span:hover::after {
-  content: "Bsc(Hons) in Computer Science";
-  @apply absolute top-full left-0 bg-white p-2 border border-gray-300;
-  z-index: 10;
-}
-
-.education {
-  @apply bg-gray-700 text-white;
-}
-
-.uni {
-  @apply bg-gray-800 p-3 rounded-lg;
-}
-
-.school {
-  @apply bg-gray-600 p-3 rounded-lg;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .App {
-    @apply my-3 mx-auto p-4;
-  }
-
-  .App-header {
-    @apply text-base -mt-10;
-  }
-
-  .App-logo {
-    @apply h-[30vmin] -mt-52;
-  }
-
-  .about-me, .skils, .education {
-    @apply p-4;
-  }
-
-  .skil_logo1, .skil_logo2, .skil_logo3, .skil_logo4, .skil_logo5 {
-    @apply w-10 h-10;
-  }
-}
-
-@media (max-width: 480px) {
-  .App {
-    @apply my-2 mx-auto p-3;
-  }
-
-  .App-header {
-    @apply text-sm -mt-5;
-  }
-
-  .App-logo {
-    @apply h-[20vmin] -mt-36;
-  }
-
-  .about-me, .skils, .education {
-    @apply p-3 text-sm;
-  }
-
-  .skil_logo1, .skil_logo2, .skil_logo3, .skil_logo4, .skil_logo5 {
-    @apply w-8 h-8 p-1;
-  }
-
-  span:hover::after {
-    @apply text-xs;
-  }
-}
-
+    margin: 5px auto;
     padding: 10px;
   }
 
   .App-header {
     font-size: calc(6px + 2vmin);
-    margin-top: -5%;
+    margin-top: -120%;
   }
 
   .App-logo {
@@ -299,19 +154,13 @@ span:hover::after {
     margin-top: -150px;
   }
 
-  .about-me,
-  .skils,
-  .education {
+  .about-me, .skils, .education {
     padding: 10px;
     margin: 5px auto;
     font-size: 0.9rem;
   }
 
-  .skil_logo1,
-  .skil_logo2,
-  .skil_logo3,
-  .skil_logo4,
-  .skil_logo5 {
+  .skil_logo1, .skil_logo2, .skil_logo3, .skil_logo4, .skil_logo5 {
     width: 30px;
     height: 30px;
     padding: 5px;
@@ -319,5 +168,16 @@ span:hover::after {
 
   span:hover::after {
     font-size: 0.8rem;
+  }
+  .campus{
+    font-size: 0.5rem;
+    width: 50%;
+    height: 30%;
+    color: #efeff1;
+    margin-top: 10px;
+  }
+  .school{
+    font-size: 0.5rem;
+    color: #efeff1;
   }
 }
